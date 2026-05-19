@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use the Master CAD Library - Kanrog Creations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-img {
+            height: 1.5em;
+            vertical-align: middle;
+            margin: 0 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-header">
+        <div class="container">
+            <a href="https://kanrog.com" class="back-link">← Back to Main Page</a>
+            <div class="nav-title">CAD Library Guide</div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>How to Use the Master CAD Library</h1>
+            <div class="subtitle">Grab exactly the 3D printer components you need without bogging down your assemblies.</div>
+            <div class="author">By Kanrog Creations</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="content-section">
+            
+            <div class="info-block" style="background-color: #2a2a2a; border-left: 4px solid #9b59b6; padding: 20px; margin-bottom: 40px; border-radius: 0 10px 10px 0;">
+                <h3 style="margin-top: 0; color: #9b59b6; font-size: 1.4rem;">🔗 Access the Master Library</h3>
+                <p style="color: #e0e0e0; font-size: 1.1rem;">You can view, use, and export from the live Onshape document directly through your browser—no software installation required.</p>
+                <a href="https://cad.onshape.com/documents/12eadf3742fd601ed6be2e0f/w/fcf1a4861e4dbb09c4cd79dc/e/db0a6ae03710e70270879a76?configuration=List_6c0TK4sVRuA9rl%3D_5020&renderMode=0&uiState=6a0b81e8b3ea4dd3d57caef7" target="_blank" style="display: inline-block; margin-top: 10px; padding: 12px 24px; background: #9b59b6; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1rem; transition: background 0.2s;">Open Onshape CAD Library</a>
+            </div>
+
+            <h2 class="section-title">Getting Started with the Library</h2>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Understanding the Models</div>
+                    <div class="step-subtitle">Why "Clearance Bricks" are better</div>
+                </div>
+                <div class="step-content">
+                    <p>This master document is designed to be the ultimate reference library for anyone building custom 3D printers, toolheads, or motion systems. Instead of hunting down dozens of obscure datasheets or downloading heavily detailed step files that crash your CAD software, everything here is built as lightweight "clearance models."</p>
+
+                    <div class="success-block">
+                        <h4>💡 Pro Tip for Onshape Users</h4>
+                        <p>If you use Onshape, you don't need to download anything. Just insert the parts directly into your active workspace using the public link or by searching "3DPCR".</p>
+                    </div>
+
+                    <div class="warning-block">
+                        <h4>⚠️ Performance Warning</h4>
+                        <p>These models intentionally omit complex internal geometry like bearing tracks, motor coils, or fan blades. They are strictly for layout, clearance checking, and assembly mapping. Do not try to use these to manufacture replacement internals!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Inserting into an Assembly</div>
+                    <div class="step-subtitle">Adding parts to your main build environment</div>
+                </div>
+                <div class="step-content">
+                    <p>This is the standard workflow when you are putting together a full printer or toolhead in an Assembly tab.</p>
+
+                    <ul>
+                        <li><strong>Step 1:</strong> In your own document, switch to the <strong>Assembly</strong> <img src="image/Assembly.png" alt="Assembly tab" class="btn-img"> tab at the bottom of the screen.</li>
+                        <li><strong>Step 2:</strong> Click the <strong>Insert</strong> <img src="image/Insert.png" alt="Insert button" class="btn-img"> button in the top left corner of the toolbar.</li>
+                        <li><strong>Step 3:</strong> In the menu, click the <strong>Other documents</strong> <img src="image/Other-documents.png" alt="Other documents" class="btn-img"> tab. You can either paste the master library URL into the search bar, or simply search for <strong>"3DPCR"</strong> and hit Enter.</li>
+                        <li><strong>Step 4:</strong> Click on the master document when it appears. Note that Onshape's insert menu does not show standard folders. Instead, look for the carefully named Part Studios (e.g., <em>"Electronics - Boards - Manta M8P"</em> or <em>"Motion - MGN Rails - MGN9c"</em>).</li>
+                        <li><strong>Step 5:</strong> If the part is configurable, look at the top of the Insert menu before clicking the part. Use the Configuration Dropdowns <img src="image/Configuration-dropdown.png" alt="Configuration dropdowns" class="btn-img"> to set your specific size (like swapping a 2510 to a 4020).</li>
+                        <li><strong>Step 6:</strong> Click the 3D part in the list, click in your workspace to drop it, and hit the <strong>Green Checkmark</strong> <img src="image/Green-checkmark.png" alt="Green Checkmark" class="btn-img"> to finish.</li>
+                    </ul>
+
+                    <div class="info-block">
+                        <h4>ℹ️ Pro-Tip: Changing Sizes on the Fly</h4>
+                        <p>Realized your 4010 fan doesn't push enough air amd need 1 4024? You don't need to delete it and insert a new one! Right-click the fan directly in your Assembly feature tree, select <strong>Change configuration</strong> <img src="image/Change-configuration.png" alt="Change configuration" class="btn-img">, pick the new size, the part will morph instantly without breaking your existing mates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Inserting into a Part Studio (Derived)</div>
+                    <div class="step-subtitle">Using parts as references for custom designs</div>
+                </div>
+                <div class="step-content">
+                    <p>If you are designing a printed mount (like a fan duct or an electronics bracket) inside a Part Studio, you need the physical reference bodies in the same workspace to design around them. You do this using the Derived feature.</p>
+
+                    <ul>
+                        <li><strong>Step 1:</strong> In your active Part Studio, click the <strong>Derived</strong> <img src="image/Derived.png" alt="Derived button" class="btn-img"> button on the main toolbar.</li>
+                        <li><strong>Step 2:</strong> In the popup menu, click <strong>Other documents</strong> <img src="image/Other-documents.png" alt="Other documents" class="btn-img"> and search for <strong>"3DPCR"</strong> or paste the library URL.</li>
+                        <li><strong>Step 3:</strong> Navigate to the correct Part Studio (e.g., <em>"Fans - Axial - Master Configuration"</em>).</li>
+                        <li><strong>Step 4:</strong> Adjust the Configuration Dropdown <img src="image/Configuration-dropdown.png" alt="Configuration dropdown" class="btn-img"> at the top of the menu to match the part you are designing around.</li>
+                        <li><strong>Step 5:</strong> Select the part from the list to pull the solid body into your workspace, and hit the <strong>Green Checkmark</strong> <img src="image/Green-checkmark.png" alt="Green Checkmark" class="btn-img">.</li>
+                    </ul>
+                    
+                    <p>You can now sketch directly on the faces of the derived part, or use the Boolean tool to subtract its volume from your custom mounts for perfect clearances!</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Library Reference Guide</div>
+                    <div class="step-subtitle">What's currently inside the master document</div>
+                </div>
+                <div class="step-content">
+                    <div class="legend" style="color: #bb8fce; font-size: 0.9rem; margin: 0.5rem 0 1rem;">
+                        A breakdown of the current document tree and available components.
+                    </div>
+
+                    <div class="table-scroll" style="width: 100%; overflow-x: auto; margin: 20px 0;">
+                        <table class="material-table" style="width: 100%; border-collapse: collapse; background: #1a1a1a; border: 2px solid #9b59b6; border-radius: 10px; color: white;">
+                            <caption style="background: #2a2a2a; color: #9b59b6; border-bottom: 2px solid #9b59b6; text-align: left; padding: 1rem; font-weight: 600; font-size: 1.1rem;">Component Categories</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="padding: 1rem; background: #2a2a2a; color: #9b59b6; font-weight: 700; border-bottom: 2px solid #9b59b6; text-align: left;">Category</th>
+                                    <th scope="col" style="padding: 1rem; background: #2a2a2a; color: #9b59b6; font-weight: 700; border-bottom: 2px solid #9b59b6; text-align: left;">Part Studios</th>
+                                    <th scope="col" style="padding: 1rem; background: #2a2a2a; color: #9b59b6; font-weight: 700; border-bottom: 2px solid #9b59b6; text-align: left;">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" style="padding: 1rem; color: #bb8fce; font-weight: 600; border-bottom: 1px solid #3a3a3a; text-align: left;">Electronics</th>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;"><strong>Boards:</strong> MKS Monster8, SKR Mini E3, SKR PICO, DZ01, Manta M4P/M5P/M8P, BTT Kaken, LDO Leviathan, FLY Micro4, FLY DP5<br><strong>SoC:</strong> rPi, rPi Zero</td>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;">Accurate mounting footprints and clearance volumes.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="padding: 1rem; color: #bb8fce; font-weight: 600; border-bottom: 1px solid #3a3a3a; text-align: left;">Motion & Hardware</th>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;"><strong>Bearing:</strong> F695 (Single & Stack)<br><strong>Motion:</strong> MGN Rail, MGN Carriage, Linear Rod, Linear Carriage<br><strong>Pulley:</strong> GT2 20T, GT2 80T<br><strong>Motor:</strong> NEMA Motor</td>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;">Highly configurable. Select NEMA sizes, MGN block sizes (H/C), and rod diameters from dropdowns.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="padding: 1rem; color: #bb8fce; font-weight: 600; border-bottom: 1px solid #3a3a3a; text-align: left;">Fans</th>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;"><strong>Radial:</strong> 3010, 4010, 5015 (Individual)<br><strong>Axial:</strong> Master Configuration Studio</td>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;">Axial studio covers dozens of sizes from 2510 to 14025.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="padding: 1rem; color: #bb8fce; font-weight: 600; border-bottom: 1px solid #3a3a3a; text-align: left;">Extrusion (WIP)</th>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;"><strong>Extruder:</strong> DDE/BMG<br><strong>Hotend:</strong> TD6</td>
+                                    <td style="padding: 1rem; color: white; border-bottom: 1px solid #3a3a3a; text-align: left;">Growing library of printhead components.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">5</div>
+                    <div class="step-title">Exporting to Other CAD Software</div>
+                    <div class="step-subtitle">For Fusion360, SolidWorks, and FreeCAD users</div>
+                </div>
+                <div class="step-content">
+                    <p>If you prefer to work in offline CAD software, you can easily pull files from this document. Because the parts are parametric, you will need to export the specific size you require.</p>
+                    
+                    <h4>How to Export a STEP File:</h4>
+                    <ul>
+                        <li><strong>1.</strong> Open the public link and navigate to the Part Studio you need.</li>
+                        <li><strong>2.</strong> If the part is configurable (like the Axial Fans), use the drop-down menu in the top left to select your exact size.</li>
+                        <li><strong>3.</strong> Look at the bottom-left corner of your screen for the <strong>Parts</strong> folder.</li>
+                        <li><strong>4.</strong> Right-click the part name (e.g., "Fan - Axial - 4020") and select <strong>Export</strong> <img src="image/Export.png" alt="Export button" class="btn-img">.</li>
+                        <li><strong>5.</strong> Choose "STEP" as your format and hit download!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">6</div>
+                    <div class="step-title">Contributing to the Project</div>
+                    <div class="step-subtitle">Help build the ultimate maker library</div>
+                </div>
+                <div class="step-content">
+                    <p>The 3D printing space moves fast, and new hotends, extruders, and boards are released constantly. Building out the Hotend and Extruder sections takes a massive amount of time for one person, so community contributions are incredibly welcome!</p>
+
+                    <h4>Contribution Rules:</h4>
+                    <p>To keep the library legally clean and performant, any submitted models must adhere to two strict rules:</p>
+                    
+                    <ul>
+                        <li><strong>Original Models Only:</strong> You must model the part yourself using reference dimensions or calipers. We absolutely cannot accept step files downloaded from other file-sharing sites (like Printables, MakerWorld, or GrabCAD) due to licensing restrictions.</li>
+                        <li><strong>Keep it Simple (Clearance Bricks):</strong> Do not model internal gears, complex cooling fins, or PCB traces. The models must be "dumbed down" to their bare external dimensions, mounting holes, and critical clearances. Complex geometry crashes large assemblies!</li>
+                    </ul>
+
+                    <div class="info-block">
+                        <h4>ℹ️ How to Submit</h4>
+                        <p>If you have modeled a new popular component following the rules above, please reach out! You can use the contact form on my main website at <a href="https://kanrog.com" style="color: #bb8fce;">kanrog.com</a>, or email me directly at <a href="mailto:kanrogcreations@gmail.com" style="color: #bb8fce;">kanrogcreations@gmail.com</a>. Send a link to your public Onshape document, and if it meets the standards, it will be merged into the master library!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">7</div>
+                    <div class="step-title">What's Coming Next (The Wishlist)</div>
+                    <div class="step-subtitle">Future additions to the master library</div>
+                </div>
+                <div class="step-content">
+                    <p>This library is a living document, and there are big plans to expand it. Here is a look at what is currently on the roadmap to be added in future updates:</p>
+
+                    <ul>
+                        <li><strong>Expanded Electronics:</strong> Adding more mainboards and SoC variants to cover an even wider range of custom builds.</li>
+                        <li><strong>Printhead Components:</strong> A massive expansion of the hotend and extruder libraries (this is the most time-consuming part, so check the contribution section above if you want to help!).</li>
+                        <li><strong>The Master Fastener Library:</strong> A complete, configurable suite of the hardware we use every day, including:
+                            <ul>
+                                <li>Metric bolts and nuts</li>
+                                <li>Heat-set inserts</li>
+                                <li>Various types of T-nuts for aluminum extrusions</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Final Thoughts</h2>
+            <div class="conclusion">
+                <h2>🎉 Time to Build!</h2>
+                <p>This library was created to take the friction out of the design process. Spend less time measuring mounting hole distances, and more time actually building your dream machine. Happy making!</p>
+            </div>
+        </section>
+
+        <section class="back-section">
+            <div class="back-card">
+                <h3>Return to Main Page</h3>
+                <p>Ready to explore more resources?</p>
+                <a href="https://kanrog.com" class="back-button">← Back to Main Site</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <footer>
+        <p>© 2026 - Kanrog Creations</p>
+    </footer>
+</body>
+</html>
